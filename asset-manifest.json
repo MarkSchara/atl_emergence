@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/atl_emergence/static/css/main.c52ea6db.css",
-    "main.js": "/atl_emergence/static/js/main.0042fa88.js",
+    "main.js": "/atl_emergence/static/js/main.67e7cf59.js",
     "index.html": "/atl_emergence/index.html",
     "main.c52ea6db.css.map": "/atl_emergence/static/css/main.c52ea6db.css.map",
-    "main.0042fa88.js.map": "/atl_emergence/static/js/main.0042fa88.js.map"
+    "main.67e7cf59.js.map": "/atl_emergence/static/js/main.67e7cf59.js.map"
   },
   "entrypoints": [
     "static/css/main.c52ea6db.css",
-    "static/js/main.0042fa88.js"
+    "static/js/main.67e7cf59.js"
   ]
 }
