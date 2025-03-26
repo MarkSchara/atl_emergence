@@ -1,0 +1,30 @@
+/* Prevent scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100%; /* Ensures full height coverage */
+  }
+  
+  /* Full-screen background container */
+  .panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    position: relative;
+    overflow: hidden; /* Ensures nothing extends beyond */
+  }
+  
+  /* Background Image: Fills height, expands width */
+  .panel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Always fills screen height */
+    width: auto; /* Adjusts width dynamically */
+    min-width: 100vw; 
+    object-fit: cover;
+  }
+  

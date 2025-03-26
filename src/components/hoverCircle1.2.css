@@ -1,0 +1,93 @@
+.hover-circle2 {
+    position: absolute;
+    top: 33vh;
+    left: 40vw;
+    transform: translate(-50%, -50%);
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    position: absolute;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Repeat 3 times */
+  }
+  
+  /* HC1: Dense yellow dot */
+  .hc1 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* HC2: Larger opaque yellow dot */
+  .hc2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Animation on page load */
+  .animate-on-load {
+    animation-name: popIn, fadeInOut;
+  }
+  
+  /* Animation on hover */
+  .hc1.hovered {
+    animation-name: popIn; /* Trigger pop-in animation on hover */
+  }
+  
+  .hc2.hovered {
+    animation-name: fadeInOut; /* Trigger fade-in-out animation on hover */
+  }
+
+  .hover-text2 {
+    position: absolute;
+    top: -20vh; /* Below the hover circle */
+    left: -10vw;
+    transform: translateX(-50%);
+    width: 37vw;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Show text when hovered */
+  .hover-circle2:hover .hover-text2 {
+    opacity: 1;
+  }
+  
+  /* Pop-in animation */
+  @keyframes popIn {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Fade-in-out animation */
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .hover-circle2 {
+      transform: scale(0.8); /* Slightly smaller on medium screens */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hover-circle2 {
+      transform: scale(0.6); /* Smaller for smaller desktops */
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.arrow-bounce {
+    position: absolute;
+    top: 85vh; /* Adjust based on placement */
+    left: 90vw;
+    transform: translateX(-50%);
+    width: 8vw; /* Adjust size */
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto; /* Ensure it can be clicked */
+    cursor: pointer;
+}
+
+/* Default animation (plays on load & hover) */
+.arrow {
+    width: 100%;
+    height: auto;
+    animation: bounce 0.9s ease-in-out infinite; /* Matches JS timing */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive scaling */
+@media (max-width: 1440px) {
+    .arrow-bounce {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrow-bounce {
+        transform: scale(0.6);
+    }
+}

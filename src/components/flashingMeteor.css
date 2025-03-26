@@ -1,0 +1,52 @@
+.flashing-meteor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevents interaction issues */
+  }
+  
+  /* Large meteor (Main size) */
+  .flashing-meteor-large {
+    top: 27vh; /* Adjust based on placement */
+    left: 16vw;
+    width: 20vw; /* Large size */
+    height: 20vw;
+  }
+  
+  /* Small meteor */
+  .flashing-meteor-small {
+    top: 40vh; /* Adjust based on placement */
+    left: 10vw;
+    width: 10vw; /* Smaller size */
+    height: 10vw;
+  }
+  
+  /* Ensure the image scales properly */
+  .meteor-image {
+    width: 100%;
+    height: auto;
+    animation: fadeInOut 1s infinite; /* Smooth fade transition */
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive scaling */
+@media (max-width: 1440px) {
+    .arrow-bounce {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrow-bounce {
+        transform: scale(0.6);
+    }
+}
