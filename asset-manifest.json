@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/atl_emergence/static/css/main.c52ea6db.css",
+    "main.js": "/atl_emergence/static/js/main.9e52a357.js",
+    "index.html": "/atl_emergence/index.html",
+    "main.c52ea6db.css.map": "/atl_emergence/static/css/main.c52ea6db.css.map",
+    "main.9e52a357.js.map": "/atl_emergence/static/js/main.9e52a357.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c52ea6db.css",
+    "static/js/main.9e52a357.js"
+  ]
+}
